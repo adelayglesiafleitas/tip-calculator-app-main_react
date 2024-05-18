@@ -1,0 +1,144 @@
+.confi_container {
+  padding-top: 20px;
+  padding-left: 37px;
+  padding-right: 37px;
+  color: var(--Grayish_cyan);
+}
+label {
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+input {
+  width: 309px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--Very_light_grayish_cyan);
+  margin-bottom: 34px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 15px;
+  padding: 17px;
+  text-align: end;
+  font-size: 1.7rem;
+  color: var(--Very_dark_cyan);
+  cursor: pointer;
+}
+
+.input_Bill {
+  background-image: url(../images/icon-dollar.svg);
+}
+.input_NumPeaple {
+  background-image: url(../images/icon-person.svg);
+}
+.input_custom {
+  width: 145px;
+  height: 50px;
+  margin-bottom: 0px;
+}
+
+.result_container {
+  background-color: var(--Very_dark_cyan);
+  width: 320px;
+  height: 260px;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.result_grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+}
+p {
+  color: rgba(255, 255, 255, 0.3);
+}
+.reset {
+  margin-top: 25px;
+  width: 282px;
+  height: 52px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--Strong_cyan);
+  color: var(--Very_dark_cyan);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+h2 {
+  color: var(--Strong_cyan);
+  font-size: 2rem;
+  text-align: end;
+}
+
+.div_number {
+  width: 135px;
+  margin-top: 25px;
+}
+/*.................(>1440px)......................*/
+@media only screen and (min-width: 1440px) {
+  .confi_container {
+    width: 440px;
+    height: 420px;
+    /*background-color: red;*/
+    margin: 0 auto;
+    margin-top: 42px;
+  }
+
+  input {
+    width: 379px;
+    height: 54px;
+    margin-bottom: 34px;
+  }
+  .buttons_container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 379px;
+    height: 170px;
+
+    margin-bottom: 0px;
+  }
+
+  label {
+    margin-bottom: 15px;
+  }
+  .result_container {
+    width: 412px;
+    height: 528px;
+    margin-right: 42xp;
+  }
+  .confi_container {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .input_custom {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .result_container {
+    width: 415;
+    height: 420px;
+  }
+  .reset {
+    transform: translateY(55px);
+    width: 337px;
+    height: 55px;
+    
+  }
+}
