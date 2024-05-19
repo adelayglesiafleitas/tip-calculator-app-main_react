@@ -17,7 +17,9 @@ const Main = () => {
     let total = bill;
     let amount_Person = (total / cantPeaple).toFixed(2);
     let tips = ((tip * total).toFixed(2) / 100).toFixed(2);
-    let totalWithTip = (parseFloat(amount_Person) + parseFloat(tips)).toFixed(2);
+    let totalWithTip = (parseFloat(amount_Person) + parseFloat(tips)).toFixed(
+      2
+    );
     tips = (tips / cantPeaple).toFixed(2);
 
     if (isNaN(totalWithTip)) {
@@ -95,6 +97,7 @@ const Main = () => {
             id="NumPeaple"
             className="input_NumPeaple"
             placeholder="0"
+            min={1}
             onChange={handleChangeNumPeaple}
             value={cantPeaple}
           />
