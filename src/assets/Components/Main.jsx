@@ -42,6 +42,7 @@ const Main = () => {
   const handleReset = () => {
     setBill(0);
     setCantPeaple(1);
+    setTip(0);
   };
 
   //console.log({ bill: bill, cantPeaple: cantPeaple, tip });
